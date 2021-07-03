@@ -19,10 +19,10 @@ Suppose we have a list of cars which each car have color, brand, model & price a
 
 Then we want to create the below sequential process:
 
-Step1: Filter red cars
-Step2: Remove duplicate cars
-Step3: Increase benz cars price by 10%
-Step4: Show the list in one line
+- step 1: Filter red cars
+- step 2: Remove duplicate cars
+- step 3: Increase benz cars price by 10%
+- step 4: Show the list in one line
 
 With pipeline pattern you can simply do this process easy. The point is you can separate each stage with others and also you can swap the steps together without breaking others.
 

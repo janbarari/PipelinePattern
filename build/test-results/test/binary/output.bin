@@ -1,3 +1,12 @@
-¢Current handler: class io.github.janbarari.designpattern.pipeline.RemoveAlphabetsStage, input is GoYankees123!%$ of type String, output is 123!%$, of type String
-³Current handler: class io.github.janbarari.designpattern.pipeline.RemoveDigitsStage, input is 123!%$ of type class java.lang.String, output is !%$, of type class java.lang.String
-ÂCurrent handler: class io.github.janbarari.designpattern.pipeline.ConvertToCharArrayStage, input is !%$ of type class java.lang.String, output is [!, %, $], of type class [Ljava.lang.Character;
+
+
+Filter red cars:
+¢[Car(color=red, brand=benz, model=s500), Car(color=red, brand=benz, model=cls500), Car(color=red, brand=bmw, model=730i), Car(color=red, brand=benz, model=s200)]
+
+
+Remove duplicate cars:
+¢[Car(color=red, brand=benz, model=s500), Car(color=red, brand=benz, model=cls500), Car(color=red, brand=bmw, model=730i), Car(color=red, brand=benz, model=s200)]
+
+
+Map cars model to one line:
+[s500, cls500, 730i, s200]

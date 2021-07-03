@@ -7,9 +7,7 @@ Allows processing of data in a series of stages by giving in an initial input an
 Wikipedia Says
 -------
 In software engineering, a pipeline consists of a chain of processing elements (processes, threads, coroutines, functions, etc.), arranged so that the output of each element is the input of the next; the name is by analogy to a physical pipeline.
-How it works
-------
-The Pipeline pattern uses ordered stages to process a sequence of input values. Each implemented task is represented by a stage of the pipeline. You can think of pipelines as similar to assembly lines in a factory, where each item in the assembly line is constructed in stages. The partially assembled item is passed from one assembly stage to another. The outputs of the assembly line occur in the same order as that of the inputs.
+How it works. The Pipeline pattern uses ordered stages to process a sequence of input values. Each implemented task is represented by a stage of the pipeline. You can think of pipelines as similar to assembly lines in a factory, where each item in the assembly line is constructed in stages. The partially assembled item is passed from one assembly stage to another. The outputs of the assembly line occur in the same order as that of the inputs.
 
 ⬇️ Let me describe with an example
 ------
@@ -24,12 +22,8 @@ Then we want to create the below sequential process:
 - step 3: Increase benz cars price by 10%
 - step 4: Show the result in console
 
-With pipeline pattern you can simply do this process easy. The point is you can separate each stage with others and also you can swap the steps together without breaking others.
+With pipeline pattern you can simply do this process easy. The point is you can add new stages, separate each stage with others and also you can swap the steps together without breaking others.
 
- Intent
- ------
-Allows processing of data in a series of stages by giving in an initial input and passing the processed output to be used by the next stages.
- 
  Projects using pipeline
  ------
  - java.util.Stream

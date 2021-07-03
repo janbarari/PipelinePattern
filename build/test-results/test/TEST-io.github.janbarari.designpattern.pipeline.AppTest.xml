@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.janbarari.designpattern.pipeline.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-03T14:38:57" hostname="Mehdis-iMac.local" time="0.065">
+  <properties/>
+  <testcase name="shouldExecuteAppWithoutException()" classname="io.github.janbarari.designpattern.pipeline.AppTest" time="0.065"/>
+  <system-out><![CDATA[Current handler: class io.github.janbarari.designpattern.pipeline.RemoveAlphabetsStage, input is GoYankees123!%$ of type String, output is 123!%$, of type String
+Current handler: class io.github.janbarari.designpattern.pipeline.RemoveDigitsStage, input is 123!%$ of type class java.lang.String, output is !%$, of type class java.lang.String
+Current handler: class io.github.janbarari.designpattern.pipeline.ConvertToCharArrayStage, input is !%$ of type class java.lang.String, output is [!, %, $], of type class [Ljava.lang.Character;
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

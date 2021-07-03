@@ -22,7 +22,7 @@ Then we want to create the below sequential process:
 - step 1: Filter red cars
 - step 2: Remove duplicated cars by model
 - step 3: Increase benz cars price by 10%
-- step 4: Show the list in one line
+- step 4: Show the result in console
 
 With pipeline pattern you can simply do this process easy. The point is you can separate each stage with others and also you can swap the steps together without breaking others.
 

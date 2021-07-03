@@ -1,12 +1,16 @@
 
 
 Filter red cars:
-¢[Car(color=red, brand=benz, model=s500), Car(color=red, brand=benz, model=cls500), Car(color=red, brand=bmw, model=730i), Car(color=red, brand=benz, model=s200)]
+Ö[Car(color=red, brand=benz, model=s500, price=10000), Car(color=red, brand=benz, model=s500, price=10000), Car(color=red, brand=bmw, model=730i, price=12000), Car(color=red, brand=kia, model=sportage, price=5000)]
 
 
 Remove duplicate cars:
-¢[Car(color=red, brand=benz, model=s500), Car(color=red, brand=benz, model=cls500), Car(color=red, brand=bmw, model=730i), Car(color=red, brand=benz, model=s200)]
+¡[Car(color=red, brand=benz, model=s500, price=10000), Car(color=red, brand=bmw, model=730i, price=12000), Car(color=red, brand=kia, model=sportage, price=5000)]
+
+
+ Increase benz cars price by 10%
+¡[Car(color=red, brand=benz, model=s500, price=11000), Car(color=red, brand=bmw, model=730i, price=12000), Car(color=red, brand=kia, model=sportage, price=5000)]
 
 
 Map cars model to one line:
-[s500, cls500, 730i, s200]
+¡[Car(color=red, brand=benz, model=s500, price=11000), Car(color=red, brand=bmw, model=730i, price=12000), Car(color=red, brand=kia, model=sportage, price=5000)]

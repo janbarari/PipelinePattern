@@ -12,19 +12,20 @@ class PipelineTest {
     fun testPipeline() {
 
         val cars = arrayListOf<Car>(
-            Car("red", "benz", "s500"),
-            Car("red", "benz", "cls500"),
-            Car("red", "bmw", "730i"),
-            Car("green", "audi", "s7"),
-            Car("red", "benz", "s200")
+            Car("red", "benz", "s500", 10_000),
+            Car("red", "benz", "s500", 10_000),
+            Car("red", "bmw", "730i", 12_000),
+            Car("green", "audi", "s7", 44_000),
+            Car("red", "kia", "sportage", 5_000)
         )
 
-        val pipeline = Pipeline(FilterRedColorStage())
-            .addStage(DistinctByModelStage())
-            .addStage(MapCarsResultStage())
+        val pipeline = Pipeline(KeepOnlyRedCarsStage())
+            .addStage(RemoveDuplicateModelCarsStage())
+            .addStage(IncreaseBenzCarsPriceStage())
+            .addStage(PrintResultStage())
 
         assertEquals(
-            "[s500, 730i]",
+            "[Car(color=red, brand=benz, model=s500, price=11000), Car(color=red, brand=bmw, model=730i, price=12000), Car(color=red, brand=kia, model=sportage, price=5000)]",
             pipeline.execute(cars)
         )
 

@@ -20,7 +20,7 @@ Suppose we have a list of cars which each car have color, brand, model & price a
 Then we want to create the below sequential process:
 
 - step 1: Filter red cars
-- step 2: Remove duplicate cars
+- step 2: Remove duplicated cars by model
 - step 3: Increase benz cars price by 10%
 - step 4: Show the list in one line
 
